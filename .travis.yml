@@ -1,0 +1,19 @@
+language: java
+jdk:
+  - openjdk11
+
+services:
+  - postgresql
+
+before_install:
+  - psql -c 'create database url_short_cut;' -U postgres
+
+sudo: false
+
+# Отправлять уведомление на почту youremail@smtp.ru(Изменить на свою) если сборка упала
+notifications:
+  email:
+    recipients:
+      - sotnikovvu@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
