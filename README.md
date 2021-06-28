@@ -1,5 +1,4 @@
 <a href="https://travis-ci.com/github/Sotnikov89/url_short_cut">
-# Описание проекта 
   <img src="https://travis-ci.com/Sotnikov89/url_short_cut.svg?branch=main" />
 </a>
 # Описание проекта 
