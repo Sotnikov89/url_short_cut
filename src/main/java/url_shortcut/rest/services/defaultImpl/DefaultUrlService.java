@@ -32,10 +32,9 @@ public class DefaultUrlService implements UrlService {
     }
 
     @Override
-    @Transactional
     public Url getUrlByCode(String code) {
         Url url = urlRepository.findUrlByCode(code);
-        url.addCallsCount();
+        urlRepository.incrementCallsCount(code);
         return url;
     }
 }
